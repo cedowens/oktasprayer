@@ -14,4 +14,5 @@ The script will then perform a single check for each user in the input file with
 
 If performing this test for a large number of users, you may want to consider breaking the user list into smaller groups and running each group from a different source host.
 
+Note: if the script is having trouble parsing the password, surround it in single quotes (').
 
