@@ -16,3 +16,7 @@ If performing this test for a large number of users, you may want to consider br
 
 Note: if the script is having trouble parsing the password, surround it in single quotes (').
 
+--------------------
+
+This should not be used for malicious purposes.
+
