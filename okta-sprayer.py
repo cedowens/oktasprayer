@@ -5,7 +5,7 @@ import sys
 
 if (len(sys.argv) < 7 and '-h' not in sys.argv):
     print("Usage:")
-    print("python3 %s -p <password> -f <inputfile> -d <domain" % sys.argv[0])
+    print("python3 %s -p <password> -f <inputfile> -d <domain>" % sys.argv[0])
     sys.exit(1)
 
 
