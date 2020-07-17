@@ -6,7 +6,7 @@ First:
 pip3 install requests
 
 Use:
-python3 -p [password_to_try] -f [input_file] -d [domain.com]
+python3 okta-sprayer.py -p [password_to_try] -f [input_file] -d [domain.com]
 
 For ease of use, put the input file in the same directory as the script and ensure each username is on its own line.
 
